@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Expressive}[2024/08/10 Base Class for Expressive Resumes/Cover Letters]
 
-\newcommand{\spacesmall}{5pt}
-\newcommand{\spacenormal}{10pt}
+\newcommand{\spacesmall}{4pt}
+\newcommand{\spacenormal}{8pt}
 
 %% ----- Options -----
 % https://www.latex-project.org/help/documentation/clsguide.pdf
@@ -10,7 +10,7 @@
 % None currently
 
 %% ----- Parent Class -----
-\LoadClass[letterpaper,10pt]{article}
+\LoadClass[letterpaper,9pt]{article}
 
 %% ----- Required Packages -----
 %% Support non-ascii characters

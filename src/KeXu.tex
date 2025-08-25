@@ -1,0 +1,142 @@
+\documentclass{ExpressiveResume}
+
+% Make section headers black
+\usepackage{xcolor}
+\renewcommand{\section}[1]{%
+    \vspace{0.5em}%
+    {\Large\bfseries\color{black}#1}%
+    \vspace{0.25em}%
+    \hrule%
+    \vspace{0.5em}%
+}
+
+% Make overall font smaller
+% \usepackage{anyfontsize}
+% \fontsize{9}{11}\selectfont
+
+% ----- Resume -----
+\begin{document}
+
+% Make font smaller
+\small
+
+% ----- Name + Contact Information -----
+\resumeheader[
+    firstname=Ke,
+    lastname=Xu,
+    email=kxu27@u.rochester.edu,
+    phone=585-358-9858,
+    linkedin=kxudata,
+    github=kefoto
+]
+
+% ----- Education -----
+\section{Education}
+
+\degree{M.S. Data Science}{Vanderbilt University}{May 2027}
+
+\degree{B.S. Data Science | B.S. Business Analytics}{University of Rochester}{May 2025}{
+    \achievement{Cumulative GPA: 3.65/4.0}
+}
+
+% ----- Experience -----
+\section{Experience}
+
+\experience{UR Medicine Motion Lab}{
+    \role{Data Science Intern}{January 2025 -- May 2025}{
+        \achievement{
+            Engineered scalable \tech{PostgreSQL} schema to normalize 3,000+ 3D motion and EMG datasets with 2,000+ features
+        }
+        \achievement{
+            Automated \tech{data ingestion pipelines} with \tech{sqlalchemy} scripting, saving 10+ hours weekly
+        }
+        \achievement{
+            Built high-accuracy \tech{LSTM model} (92\%) for real-time IMU motion sequence classification
+        }
+        \achievement{
+            Enabled efficient querying and integration in research pipelines through \tech{database management}
+        }
+    }
+}
+
+\experience{Goergen Institute of Data Science, University of Rochester}{
+    \role{Undergraduate Research Assistant}{September 2024 -- May 2025}{
+        \achievement{
+            Deployed \tech{multimodal AI} models for stock forecasting using sentiment-video-audio analysis
+        }
+        \achievement{
+            Built \tech{visual-audio processing pipeline} with \tech{speech-to-text} and \tech{speaker diarization}
+        }
+        \achievement{
+            Implemented accelerated \tech{PyTorch} and \tech{HuggingFace} frameworks for emotion-based forecasting models
+        }
+        \achievement{
+            Analyzed correlation between election precinct outcomes and visual OCR detection of yard signs under Professor Caliskan
+        }
+    }
+}
+
+\experience{ZTO Express Inc.}{
+    \role{Data Analytics Intern}{June 2024 -- August 2024}{
+        \achievement{
+            Developed \tech{NLP pipeline} to identify 15\% of major clients from 34PB annual order data
+        }
+        \achievement{
+            Leveraged \tech{Spark} and \tech{Hive} for data extraction from warehousing systems
+        }
+        \achievement{
+            Refined client selection criteria and implemented new KPIs for secondary market classification and targeting
+        }
+    }
+}
+
+% ----- Additional Experience -----
+\section{Additional Experience}
+
+\experience{Memorial Art Gallery}{
+    \role{IT Assistant}{September 2024 -- June 2025}{
+        \achievement{
+            Developed modular \tech{Python scripts} for \tech{API integration} and automated report generation
+        }
+        \achievement{
+            Reduced report preparation time by 35\% with structured documentation and accurate data visualization
+        }
+        \achievement{
+            Built \tech{React-Flask} web application with interactive calendar views and multi-location support
+        }
+        \achievement{
+            Implemented \tech{real-time} filtering, PDF generation, and emergency tracking features with IIS deployment on protected network
+        }
+    }
+}
+
+% ----- Skills -----
+\section{Skills}
+
+\textbf{Technical Skills:} \tech{Machine Learning}, \tech{Deep Learning}, \tech{Data Science}, \tech{Artificial Intelligence}, \tech{Computer Vision}, \tech{Natural Language Processing}, \tech{Time-Series Analysis}, \tech{Statistical Modeling}, \tech{Data Mining}, \tech{Big Data Analytics}
+
+\textbf{Programming:} \tech{Python}, \tech{SQL}, \tech{R}, \tech{Java}, \tech{JavaScript}, \tech{C++}, \tech{Bash Scripting}
+
+\textbf{ML/AI Frameworks:} \tech{PyTorch}, \tech{TensorFlow}, \tech{Scikit-Learn}, \tech{HuggingFace Transformers}, \tech{OpenCV}, \tech{Pandas}, \tech{NumPy}
+
+\textbf{Data Engineering:} \tech{Apache Spark}, \tech{Hive}, \tech{PostgreSQL}, \tech{MySQL}, \tech{Data Warehousing}, \tech{Cloud Computing}
+
+\textbf{Development Tools:} \tech{Git}, \tech{GitHub}, \tech{CI/CD}, \tech{REST APIs}, \tech{React}, \tech{Flask}
+
+\textbf{Languages:} English (Professional), Mandarin (Native)
+
+% ----- Awards -----
+\section{Awards}
+
+\award{1st Prize Winner -- AI Summit New York 2024 Hackathon}{}{2024}{
+    \achievement{
+        Developed a digital assistant and dashboard for health and safety that analyzes vitals via a smartwatch to notify EMS during life-threatening crises with Google's Map, Gemini, and Telegram API.
+    }
+}
+
+\award{Best Paper Award -- Summer Institute of Computational Social Science (SICSS) 2024 Rochester}{}{2024}
+    \achievement{
+        Machine Learning-Based Analysis of Healthcare Institution Preferences in Turkey: Insights for Health Policy. 
+    }
+
+\end{document}
